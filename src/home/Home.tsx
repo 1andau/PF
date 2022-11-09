@@ -1,39 +1,39 @@
 import React from 'react'
 import { motion, AnimatePresence } from "framer-motion";
+import { DestinationTitle } from '../GlobalStyles';
 import data from './db.json'; 
 import './Home.scss'; 
 import CV from '../assets/cv-Sarah.pdf'; 
+import spaceImg from '../assets/space.png'; 
+
 export const Home = () => {
 
     const [isSelected] = React.useState(data.destinations[0]);
 
   return (
-    <div className="destination-container">
-      <div className="destination-title">
+    <div className="destinationContainer">
+      <DestinationTitle>
         <span>01</span>
         <h1>Chapter.Familiarization.</h1>
-      </div>
+      </DestinationTitle>
 
-      <div className="portfolio-info">
+      <div className="MainInfo">
         <motion.div
           whileInView={{ opacity: [0, 1] }}
           transition={{ duration: 0.1 }}
           className="portfolio-img"   
         >
+        <img id="SarahSpace" src={spaceImg} alt=""/>
 
-          <motion.img
-            whileInView={{ rotate: [0, 40] }}
-            transition={{ ease: "linear", duration: 6, repeat: Infinity }}
-            src={isSelected.images.png}
-       
-          />
         </motion.div>
+
+
 
 
         <motion.div
           whileInView={{ y: [100, 0], opacity: [0, 1] }}
           transition={{ duration: 0.8 }}
-          className="portfolio-detail"
+          className="portfolioDetail"
         >
      
 

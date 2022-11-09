@@ -12,8 +12,8 @@ import {
   NavStroke,
 } from './styled';
 import * as FaIcons from 'react-icons/fa';
-import sticker from '../assets/space.png';
-import CV from '../assets/cv-Sarah.pdf';
+import sticker from '../../assets/space.png';
+import CV from '../../assets/cv-Sarah.pdf';
 
 export const SidebarData = [
   {
@@ -50,7 +50,7 @@ const Header: React.FunctionComponent = () => {
                 <a href="/home">Home</a>
               </li>
               <li>
-                <a href="/about">Portfolio</a>
+                <a href="/portfolio">Portfolio</a>
               </li>
               <li>
                 <a href="/contacts">Contacts</a>

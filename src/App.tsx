@@ -1,14 +1,16 @@
 import { Routes, Route } from 'react-router-dom';
-import { GlobalStyle } from './styles';
-import Header from './header/Header';
-import {Home} from './about/Home';
+import { GlobalStyle } from './GlobalStyles';
+import Header from './components/header/Header';
+import Main from './Main/Main';
+import { Portfolio } from './Portfolio/Project';
 function App() {
   return (
     <>
       <GlobalStyle />
       <Header/>
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/home" element={<Main />} />
+        <Route path="/portfolio" element={<Portfolio />} />
 
       </Routes>
     </>

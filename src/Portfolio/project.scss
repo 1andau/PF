@@ -1,0 +1,95 @@
+.Chapter2{
+    padding: 100px;
+}
+
+.wrapper {
+    margin: 5em auto;
+    max-width: 1000px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.06);
+    font-family: Courier New, monospace;
+  }
+  
+  .cards {
+    padding: 15px;
+    display: flex;
+    flex-flow: row wrap;
+
+  }
+  
+  .card {
+    margin: 15px; 
+    width: calc((100% / 2) - 30px);
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+  background-color: #1a1b1e;
+    @media screen and (max-width: 991px) {
+      width: calc((100% / 2) - 30px);
+    }
+  
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+  
+    &:hover {
+      .card__inner {
+        background-color: #2a2b30;;
+        transform: scale(1.05);
+        border-radius: 8px;
+      }
+    }
+  
+    &__inner {
+      width: 100%;
+      padding: 30px;
+      position: relative;
+      cursor: pointer;
+      
+      background-color: (#eceef1, 30%);
+      color: #eceef1;;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      text-align: center;
+  
+      transition: all 0.2s ease-in-out;
+      
+      &:after {
+        transition: all 0.3s ease-in-out;
+      }
+
+
+      span{
+          color: white;
+          font-weight: 800;
+          font-size: 20px;
+      }
+      p{
+          font-size: 15px;
+
+      }
+    }
+  }
+  .GitIcon{
+    width: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+
+    svg{
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+    position: relative;
+bottom: 20px;
+}
+    
+}
+
+
+.ison{
+color: black;
+padding: 1em 1em 0 1em;
+list-style: none;
+margin-left: 15px;
+
+}
+
