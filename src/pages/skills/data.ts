@@ -1,6 +1,6 @@
-import { ISkills } from "../../types/types"
+import { ISkills } from "../../types/skills/types"
 
-export const Skills : ISkills[] = [
+export const skills : ISkills[] = [
 
   //Language
     {
@@ -92,7 +92,7 @@ export const Skills : ISkills[] = [
     }, 
     {
       title: 'Mango',
-      icon: 'mango.svg',
+      icon: 'mongo.svg',
       type: 'Hosting',
     }, 
     //operating system
@@ -109,7 +109,7 @@ export const Skills : ISkills[] = [
     }, 
     {
       title: 'Windows',
-      icon: 'winda.svg',
+      icon: 'winda.png',
       type: 'OS',
     },
 
@@ -126,7 +126,7 @@ export const Skills : ISkills[] = [
       }, 
       {
         title: 'Confluense',
-        icon: 'confluense-1.svg',
+        icon: 'confluence-1.svg',
         type: 'other',
       }, 
       {

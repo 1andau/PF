@@ -1,4 +1,15 @@
-import { Project,  } from "../../types/types";
+import { Project, IDestinations } from '../../types/types';
+
+export const dest: IDestinations[] = [
+  {
+    worked: 'Frontend Developer',
+    name: 'Sarah Landau',
+    description:
+      'Hello! My name is Sarah Landau. I am a frontend dev from St. Petersburg. I love open-source, beautiful solutions, clean code, and all sorts of geeky stuff. In my free time, I learn new technology,  ride a board, run a Telegram channel, create small projects, work with 3d printing.',
+    distance: '2 years',
+    travel: '3 days',
+  },
+];
 
 export const projects: Project[] = [
   {
@@ -63,8 +74,7 @@ export const projects: Project[] = [
   },
   {
     name: 'Form to Telegram API',
-    description:
-      'REST API to send message from HTML form into Telegram Messages',
+    description: 'REST API to send message from HTML form into Telegram Messages',
     tags: ['NestJS', 'TypeScript', 'Telegraf'],
     repoLink: '',
   },
@@ -92,9 +102,4 @@ export const projects: Project[] = [
     tags: ['JavaScript', 'Bootstrap'],
     repoLink: '',
   },
-
 ];
-
-
-
-

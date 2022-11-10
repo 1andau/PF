@@ -1,7 +1,7 @@
 import './project.scss';
-import { DestinationTitle } from '../GlobalStyles';
+import { DestinationTitle, MainContainer } from '../GlobalStyles';
 import ProjectCard from './ProjectCard'; 
-import { projects } from '../datas/projects/data';
+import {projects} from '../datas/projects/data';
 
 export const Portfolio = () => {
   return (
@@ -11,7 +11,7 @@ export const Portfolio = () => {
         <h1>Chapter.Portfolio.</h1>
       </DestinationTitle>
 
-      <div className="wrapper">
+    <MainContainer>
         <div className="cards">
       {projects.map((value) => (
           <ProjectCard
@@ -23,8 +23,8 @@ export const Portfolio = () => {
           />
         ))}
         </div>
-      </div>
 
+    </MainContainer>
     </>
   );
 };

@@ -1,14 +1,14 @@
 import React from 'react'
 import { motion, AnimatePresence } from "framer-motion";
 import { DestinationTitle } from '../GlobalStyles';
-import data from './db.json'; 
+import { dest } from '../datas/projects/data';
 import './Home.scss'; 
 import CV from '../assets/cv-Sarah.pdf'; 
 import spaceImg from '../assets/space.png'; 
 
 export const Home = () => {
 
-    const [isSelected] = React.useState(data.destinations[0]);
+    const [isSelected] = React.useState(dest[0]);
 
   return (
     <div className="destinationContainer">

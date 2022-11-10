@@ -2,18 +2,10 @@
     padding: 100px;
 }
 
-.wrapper {
-    margin: 5em auto;
-    max-width: 1000px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.06);
-    font-family: Courier New, monospace;
-  }
-  
   .cards {
     padding: 15px;
     display: flex;
     flex-flow: row wrap;
-
   }
   
   .card {
@@ -85,7 +77,7 @@ bottom: 20px;
 }
 
 
-.ison{
+.tags{
 color: black;
 padding: 1em 1em 0 1em;
 list-style: none;

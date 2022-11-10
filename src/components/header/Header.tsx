@@ -56,6 +56,9 @@ const Header: React.FunctionComponent = () => {
                 <a href="/contacts">Contacts</a>
               </li>
               <li>
+                <a href="/skills">skills</a>
+              </li>
+              <li>
                 <a href={CV} download>
                   CV
                 </a>

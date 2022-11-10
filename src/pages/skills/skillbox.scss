@@ -1,0 +1,66 @@
+.Chapter{
+  padding: 100px;
+}
+.skillsCards{
+  padding: 15px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.skillcard {
+  margin: 10px; 
+  width: calc((100% / 3) - 30px);
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+background-color: #1a1b1e;
+
+  @media screen and (max-width: 991px) {
+    width: calc((100% / 3) - 30px);
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  &:hover {
+    .skills__inner {
+      // background-color: #2a2b30;;
+      transform: scale(1.05);
+      // border-radius: 8px;
+    }
+  }
+
+  &__inner {
+    width: 100%;
+    padding: 30px;
+    position: relative;
+    cursor: pointer;
+    
+    background-color: (#eceef1, 30%);
+    color: #eceef1;;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    
+    &:after {
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+ svg  {
+  fill: gold;
+}
+.skillsIcons{
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+
+}
+
+
+  
+
+
+

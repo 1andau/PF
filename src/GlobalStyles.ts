@@ -33,6 +33,13 @@ body{
   }
 `;
 
+export const MainContainer = styled.div`
+font-family: Courier New, monospace;
+margin: 1em auto;
+max-width: 1000px;
+box-shadow: 0 0 5px 0 rgba(82, 71, 71, 0.06);
+`
+
 
 
 export const DestinationTitle = styled.div`
@@ -46,7 +53,6 @@ align-items: center;
 
 span {
   display: inline-block;
-  font-family: var(--font-barlow-condensed);
   font-weight: 400;
   font-size: 2.8rem;
   line-height: 0.33rem;
@@ -70,7 +76,6 @@ span {
 }
 
 h1 {
-  font-family: var(--font-barlow-condensed);
   font-weight: 400;
   font-size: 2.8rem;
   line-height: 0.33rem;

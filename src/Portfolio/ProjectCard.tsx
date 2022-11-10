@@ -1,7 +1,5 @@
 import './project.scss';
 import {IProjectCard} from '../types/types'; 
-
-
 const ProjectCard = (
   {
     name,
@@ -9,13 +7,12 @@ const ProjectCard = (
     tags,
     repoLink,
 } :IProjectCard
-
 ) => {
 
   return (
     <>
     {/* //позже подключить repoLink */}
-      <div className=" card">
+      <div className="card">
         <div className="card__inner">
           <div className="GitIcon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -24,7 +21,7 @@ const ProjectCard = (
           </div>
           <span>{name}</span>
           <p>{description}</p>
-          <div className="ison">
+          <div className="tags">
             
             {tags.map((tag) => (
               <p

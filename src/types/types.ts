@@ -13,12 +13,10 @@ export interface IProjectCard {
     repoLink: string;
   }
 
-
-  export interface ISkills {
-    id?: number;
-    title: string;
-    icon: string;
-    type: string;
-    isMainSkill?: boolean;
-  }
-  
+export interface IDestinations{
+  worked: string; 
+  name: string;
+  description: string; 
+  distance: string; 
+  travel: string; 
+}

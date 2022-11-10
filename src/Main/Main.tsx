@@ -1,13 +1,19 @@
 import React from 'react'
+import { MainContainer } from '../GlobalStyles'
 import { Home } from '../home/Home'
+import { Skills } from '../pages/skills/Skills'
 import { Portfolio } from '../Portfolio/Project'
 
 const Main = () => {
   return (
-    <div>
+
+    
+    <>
 <Home/>
-{/* <Portfolio/> */}
-    </div>
+<Portfolio/>
+<Skills/>
+
+    </>
   )
 }
 
