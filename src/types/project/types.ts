@@ -3,6 +3,7 @@ export interface IProjectCard {
     description: string;
     tags: string[];
     repoLink: string;
+    type: 'Website' | 'CLI' | 'Misc' | string;
   }
 
 
@@ -10,6 +11,7 @@ export interface IProjectCard {
     name: string;
     description: string;
     tags: string[];
+    type: ProjectType;
     repoLink: string;
   }
 
@@ -18,5 +20,12 @@ export interface IDestinations{
   name: string;
   description: string; 
   distance: string; 
-  travel: string; 
+}
+
+export enum ProjectType {
+  WEB = 'Website',
+  BOT = 'Bot',
+  CLI = 'CLI',
+  API = 'API',
+  MISC = 'Misc',
 }

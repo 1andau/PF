@@ -1,12 +1,20 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
     "target": "es5",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/redux/*": ["redux/*"],
+      "@/types/*": ["types/*"],
+      "@/styles/*": ["styles/*"]
+    },
     "allowJs": true,
+    "downlevelIteration": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -19,8 +27,9 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx"
+    
   },
   "include": [
-    "src"
+    "src", "**/*.ts", "**/*.tsx"
   ]
 }

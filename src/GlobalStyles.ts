@@ -45,6 +45,7 @@ box-shadow: 0 0 5px 0 rgba(82, 71, 71, 0.06);
 export const DestinationTitle = styled.div`
 display: flex;
 align-items: center;
+padding: 100px; 
 
 
 @media screen and (max-width: 430px) {

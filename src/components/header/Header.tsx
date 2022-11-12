@@ -12,8 +12,8 @@ import {
   NavStroke,
 } from './styled';
 import * as FaIcons from 'react-icons/fa';
-import sticker from '../../assets/space.png';
-import CV from '../../assets/cv-Sarah.pdf';
+import sticker from '../../assets/images/space.png';
+import CV from '../../assets/CV/cv-Sarah.pdf';
 
 export const SidebarData = [
   {
@@ -22,9 +22,14 @@ export const SidebarData = [
     icon: <FaIcons.FaHome />,
   },
   {
-    title: 'Portfolio',
-    path: '/portfolio',
+    title: 'Project',
+    path: '/project',
     icon: <FaIcons.FaUsers />,
+  },
+    {
+    title: 'Skills',
+    path: '/skills',
+    icon: <FaIcons.FaTasks />,
   },
   {
     title: 'Contacts',

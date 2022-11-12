@@ -31,42 +31,52 @@ export const skills : ISkills[] = [
     {
       title: 'React',
       icon: 'react.svg',
-      type: 'Framework/Library',
+      type: 'Framework',
       isMainSkill: true,
     },
     {
       title: 'React-hook-form',
       icon: 'react-hook-form.svg',
-      type: 'Framework/Library',
+      type: 'Framework',
     },
     {
       title: 'Redux',
       icon: 'redux.svg',
-      type: 'Framework/Library',
+      type: 'Framework',
       isMainSkill: true,
     },
     {
       title: 'Sass',
       icon: 'sass-1.svg',
-      type: 'Framework/Library',
+      type: 'Framework',
       isMainSkill: true,
     }, 
     {
       title: 'JWT',
       icon: 'jwt.svg',
-      type: 'Framework/Library',
+      type: 'Framework',
       isMainSkill: true,
     },
     {
       title: 'Jquery',
       icon: 'jquery.svg',
-      type: 'Framework/Library',
+      type: 'Framework',
+    },
+    {
+      title: 'React-router-dom',
+      icon: 'reactrouter.svg',
+      type: 'Framework',
+    },
+    {
+      title: 'Styled-components',
+      icon: 'styled-components.svg',
+      type: 'Framework',
     },
       //Design
 
     {
       title: 'Figma',
-      icon: 'figma-1.svg',
+      icon: 'figma.png',
       type: 'Design',
     },
     {
@@ -82,7 +92,7 @@ export const skills : ISkills[] = [
     //Hosting
     {
       title: 'Firebase',
-      icon: 'firebase-1.svg',
+      icon: 'firebase.png',
       type: 'Hosting',
     }, 
     {
@@ -104,7 +114,7 @@ export const skills : ISkills[] = [
     }, 
     {
       title: 'MacOS',
-      icon: 'apple.svg',
+      icon: 'macos.png',
       type: 'OS',
     }, 
     {
@@ -127,11 +137,6 @@ export const skills : ISkills[] = [
       {
         title: 'Confluense',
         icon: 'confluence-1.svg',
-        type: 'other',
-      }, 
-      {
-        title: 'Linux',
-        icon: 'linux.svg',
         type: 'other',
       }, 
       {

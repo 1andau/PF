@@ -1,11 +1,10 @@
 import React from 'react'
 import { motion, AnimatePresence } from "framer-motion";
-import { DestinationTitle } from '../GlobalStyles';
-import { dest } from '../datas/projects/data';
+import { DestinationTitle } from 'GlobalStyles';
+import { dest } from 'pages/Project/data';
 import './Home.scss'; 
-import CV from '../assets/cv-Sarah.pdf'; 
-import spaceImg from '../assets/space.png'; 
-
+import CV from '../assets/CV/cv-Sarah.pdf'; 
+import spaceImg from '../assets/images/space.png'; 
 export const Home = () => {
 
     const [isSelected] = React.useState(dest[0]);

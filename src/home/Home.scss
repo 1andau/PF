@@ -1,47 +1,44 @@
 .destinationContainer {
-    position: relative;
-    background: url("../../public/Familiarization/gallaxy.jpg")
+  position: relative;
+  background: url("../../public/background/gallaxy.jpg")
+    no-repeat;
+  background-size: cover;
+  padding: 12rem 15rem;
+  min-height: 100vh;
+
+  @media screen and (max-width: 430px) {
+    background: url("../../public/background/background-destination-mobile.jpg")
       no-repeat;
     background-size: cover;
-    padding: 12rem 15rem;
-    min-height: 100vh;
-  
-    @media screen and (max-width: 430px) {
-      background: url("../../public/Familiarization/background-destination-mobile.jpg")
-        no-repeat;
-      background-size: cover;
-      padding: 15rem 3rem;
-      overflow-x: hidden;
-    }
-  
-    @media (min-width: 768px) and (max-width: 1180px) {
-      background: url("../../public/Familiarization/background-destination-tablet.jpg")
-        no-repeat;
-      background-size: cover;
-      padding: 15rem 3rem;
-    }
+    padding: 15rem 3rem;
+    overflow-x: hidden;
   }
-  
 
+  @media (min-width: 768px) and (max-width: 1180px) {
+    background: url("../../public/background/background-destination-tablet.jpg")
+      no-repeat;
+    background-size: cover;
+    padding: 15rem 3rem;
+  }
+}
 #SarahSpace {
   margin: auto;
   animation: mymove 5s infinite;
   width:600px;
+  
   @keyframes mymove {
       60% {transform: rotate(60deg);}
     } 
-
     @media screen and (max-width: 550px) {
-width: 400px;
+  width: 400px;
     }
-}
-  
+  }
+
   .MainInfo {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     margin-top: 10rem;
-
 
 
     @media screen and (max-width: 430px) {
@@ -194,4 +191,3 @@ width: 400px;
       }
     }
   }
-  
