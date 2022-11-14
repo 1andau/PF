@@ -22,6 +22,8 @@ export interface IDestinations{
   distance: string; 
 }
 
+
+
 export enum ProjectType {
   WEB = 'Website',
   BOT = 'Bot',

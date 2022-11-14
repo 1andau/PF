@@ -34,7 +34,7 @@ export const SidebarData = [
   {
     title: 'Contacts',
     path: '/contacts',
-    icon: <FaIcons.FaTasks />,
+    icon: <FaIcons.FaRegArrowAltCircleRight />,
   },
 ];
 
@@ -68,6 +68,7 @@ const Header: React.FunctionComponent = () => {
                   CV
                 </a>
               </li>
+
             </ul>
           </NavStroke>
         </Menu>

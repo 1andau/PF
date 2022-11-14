@@ -68,7 +68,7 @@ export const Home = () => {
     </div>
   )
 }
-const tabAnimation = {
+ export const tabAnimation = {
     hidden: {
       y: 200,
       opacity: 0,

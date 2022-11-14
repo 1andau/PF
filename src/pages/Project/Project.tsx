@@ -1,4 +1,4 @@
-import { DestinationTitle, MainContainer } from '../../GlobalStyles';
+import { DestinationTitle } from '../../GlobalStyles';
 import ProjectCard from './ProjectCard'; 
 import {projects} from './data';
 import { useState } from 'react';
@@ -16,12 +16,12 @@ export const Portfolio = () => {
   }, []);
   return (
     <>
-      <DestinationTitle >
+
+    <DestinationTitle >
         <span>02</span>
         <h1>Chapter.Portfolio.</h1>
       </DestinationTitle>
       
-    <MainContainer>
     <CategoryContainer>
   <ul>
  {category.map((value) => (
@@ -50,7 +50,6 @@ export const Portfolio = () => {
         ))}
         </Cards>
 
-    </MainContainer>
     </>
   );
 };

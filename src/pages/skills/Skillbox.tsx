@@ -25,9 +25,7 @@ export const SkillBox = (
         </div>
       )} 
     <div className="skills__inner">
-     
-
-      {icon ? (
+     {icon ? (
           <SkillIcons
           src={`/icons/${icon}`}
           alt={title} />
@@ -42,3 +40,5 @@ export const SkillBox = (
   </SkillCard>
   );
 };
+
+

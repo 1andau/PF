@@ -1,3 +1,11 @@
+
+export interface IAboutInfo{
+  worked: string; 
+  education: string; 
+  name: string;
+  description: string; 
+}
+
 interface IVariants {
   hidden: {
     opacity: number;

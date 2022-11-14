@@ -10,8 +10,13 @@ const Main = () => {
     
     <>
 <Home/>
+
+<MainContainer>
 <Portfolio/>
 <Skills/>
+
+</MainContainer>
+
 
     </>
   )

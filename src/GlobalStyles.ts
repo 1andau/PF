@@ -25,6 +25,10 @@ body{
     padding:0;
   }
 
+  h4{
+    font-size: 4rem;
+margin: 20px 20px;
+  }
 
   a{
     text-decoration: none;
@@ -32,6 +36,8 @@ body{
     color: white; 
   }
 `;
+
+
 
 export const MainContainer = styled.div`
 font-family: Courier New, monospace;
@@ -45,7 +51,7 @@ box-shadow: 0 0 5px 0 rgba(82, 71, 71, 0.06);
 export const DestinationTitle = styled.div`
 display: flex;
 align-items: center;
-padding: 100px; 
+margin-top: 100px; 
 
 
 @media screen and (max-width: 430px) {
