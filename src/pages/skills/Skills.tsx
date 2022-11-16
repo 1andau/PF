@@ -15,7 +15,6 @@ export const Skills = () => {
   }, []);
 
   return (
-
       <MainContainer>
       <DestinationTitle>
         <span>04</span>

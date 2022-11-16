@@ -1,19 +1,17 @@
 import { DestinationTitle, MainContainer } from '../../GlobalStyles';
-import ProjectCard from './ProjectCard'; 
 import {projects} from './data';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { ProjectType } from '../../types/project/types';
 import { useCallback } from 'react';
-import { Cards } from 'pages/styled';
 import { CategoryContainer } from 'pages/styled';
-import React from 'react';
+import {ProjectCard} from './ProjectCard';
+import styles from './Project.module.scss';
 
 
 export const Portfolio = () => {
   const category = Object.values(ProjectType);
   const [activeTab, setActiveTab] = useState(ProjectType.WEB);
-
-
+	const sectionRef = useRef<HTMLDivElement>(null);
 
   const handleTabClick = useCallback((name: ProjectType) => {
     setActiveTab(name);
@@ -39,8 +37,28 @@ export const Portfolio = () => {
   </ul>
 </CategoryContainer>
 
+<section className={styles.projects}  ref={sectionRef}>
+	<div className={styles.projects__container}>
+		{projects
+    .filter((value) => value.type === activeTab)
+    .map((value) => (
+				<ProjectCard
+					key={value.name}
+					name={value.name}
+					description={value.description}
+					repoLink={value.repoLink}
+					image={value.image}
+					tags={value.tags}
+					type={value.type}
+				/>
+			))}
+	</div>
+</section>
 
-<Cards>
+
+
+
+{/* <Cards>
       {projects
       .filter((value) => value.type === activeTab)
       .map((value) => (
@@ -54,7 +72,7 @@ export const Portfolio = () => {
           image={value.image}
           />
         ))}
-</Cards>
+</Cards> */}
 
      
 

@@ -1,99 +1,22 @@
 import styled from "styled-components";
 
-//project styles
+export const Tags = styled.div`
+color: white;
+line-height: 1.5;
+p{
+  line-height: inherit;
+  font-size: 15px;
+}
+`
+
+
+//Skills styles
 export const Cards = styled.div`
 padding: 15px;
 display: flex;
 flex-flow: row wrap;
 `
 
-export const Card = styled.div`
-margin: 15px; 
-width: calc((100% / 2) - 30px);
-border-radius: 8px;
-transition: all 0.2s ease-in-out;
-background-color: #1a1b1e;
-
-@media screen and (max-width: 991px) {
-  width: calc((100% / 2) - 30px);
-}
- 
-@media screen and (max-width: 767px) {
-  width: 100%;
-  }
-
-  img{
-    width: calc((100% / 2) - 30px);
-  }
-  :hover {
-    {
-      background-color: #2a2b30;;
-      transform: scale(1.05);
-      border-radius: 8px;
-    }
-  }
-  .card__inner {
-    width: 100%;
-    padding: 30px;
-    position: relative;
-    cursor: pointer;
-    background-color: (#eceef1, 30%);
-    color: #eceef1;;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    text-align: center;
-    transition: all 0.2s ease-in-out;
-    
-    &:after {
-      transition: all 0.3s ease-in-out;
-    }
-
-
-    span{
-        color: white;
-        font-weight: 800;
-        font-size: 20px;
-    }
-    p{
-        font-size: 15px;
-
-    }
-  }
-
-`
-export const GitIcon = styled.div`
-width: 100%;
-text-align: right;
-display: flex;
-justify-content: flex-end;
-bottom: 20px;
-
-
-svg{
-  width: 3rem;
-  height: 3rem;
-  cursor: pointer;
-position: relative;
-bottom: 20px;
-}
-
-.linked{
-    width: 2rem;
-    height: 2rem;
-    color: white; 
-margin-left: 5px; 
-}
-
-`
-export const Tags = styled.div`
-color: black;
-padding: 1em 1em 0 1em;
-list-style: none;
-margin-left: 15px;
-`
-
-
-//Skills styles
 export const SkillCard = styled.div`
 margin: 10px; 
 width: calc((100% / 3) - 30px);
@@ -137,13 +60,6 @@ card__inner {
 
 
 //styles category 
-
-export const Block = styled.div`
-
-
-`
-
-
 export const CategoryContainer = styled.div`
 padding: 5%;
 text-align: center;

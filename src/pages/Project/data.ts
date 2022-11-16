@@ -21,6 +21,7 @@ export const projects: Project[] = [
     tags: ['TypeScript', 'Node.js', 'Telegraf'],
     repoLink: 'https://github.com/tfkhdyt/translate-bot',
     image: "moviesApp", 
+
   },
   {
     name: 'Portfolio Website',
@@ -35,7 +36,7 @@ export const projects: Project[] = [
     name: 'Gatotkaca',
     description: 'Metaseach-engine, based on SearXNG',
     type: ProjectType.WEB,
-    tags: ['Python', 'SearXNG'],
+    tags: ['Python', 'SearXNG', 'TypeScript'],
     repoLink: 'https://github.com/tfkhdyt/gatotkaca',
     image: "moviesApp", 
   },
