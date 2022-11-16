@@ -1,6 +1,8 @@
 import React from 'react';
 import { ISkillBox } from '../../types/skills/types';
 import { SkillCard, SkillIcons } from 'pages/styled';
+
+
 export const SkillBox = (
   {
     title,

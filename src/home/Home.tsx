@@ -5,6 +5,8 @@ import { dest } from 'pages/Project/data';
 import './Home.scss'; 
 import CV from '../assets/CV/cv-Sarah.pdf'; 
 import spaceImg from '../assets/images/space.png'; 
+import { Button } from 'pages/button/Butoon';
+
 export const Home = () => {
 
     const [isSelected] = React.useState(dest[0]);
@@ -20,14 +22,9 @@ export const Home = () => {
         <motion.div
           whileInView={{ opacity: [0, 1] }}
           transition={{ duration: 0.1 }}
-          className="portfolio-img"   
-        >
+          className="portfolio-img">
         <img id="SarahSpace" src={spaceImg} alt=""/>
-
         </motion.div>
-
-
-
 
         <motion.div
           whileInView={{ y: [100, 0], opacity: [0, 1] }}
@@ -35,7 +32,6 @@ export const Home = () => {
           className="portfolioDetail"
         >
      
-
           <AnimatePresence exitBeforeEnter initial={false}>
             <motion.div
               key={isSelected.name}
@@ -57,7 +53,16 @@ export const Home = () => {
                 </div>
                 <div className="stat">
                   <h2>More information in my CV</h2>
-                  <button className='button_CV'><a href={CV} download>Download CV</a> </button> 
+<div className="button_CV">
+<Button size="small" href={CV} download target="_blank" rel="noopener noreferrer" >
+				Download CV
+			</Button>
+</div>
+
+
+
+
+
                 </div>
               </div>
             </motion.div>

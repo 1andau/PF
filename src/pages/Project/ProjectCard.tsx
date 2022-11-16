@@ -50,7 +50,6 @@ const ProjectCard = (
 			<Button size="small" href={repoLink} target="_blank" rel="noopener noreferrer" link>
 				Project
 			</Button>
-
 			<Tags>
             
             {tags.map((tag) => (

@@ -21,7 +21,12 @@ export const Skills = () => {
         <h1>Chapter.Skills and Education.</h1>
       </DestinationTitle>
 
-<Education>
+
+
+
+
+
+{/* <Education>
     <h4>Education</h4>
   <div className="education__content">
     <h5>National University of Computer & Emerging Sciences, Lahore</h5>
@@ -48,7 +53,7 @@ export const Skills = () => {
     <span className="year"> 2018</span>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, reiciendis.</p>
   </div>
-</Education>
+</Education> */}
 
 
 <h4>Skills</h4>

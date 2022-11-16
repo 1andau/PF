@@ -1,9 +1,15 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import img from '../../assets/images/Sarah.jpeg'; 
-import { aboutInfo } from "pages/skills/data";
+import { aboutInfo } from "./data";
 import { tabAnimation } from "home/Home";
 import { DestinationTitle, MainContainer } from "GlobalStyles";
+import { IEducationAndExperience } from "./data";
+
+
+
+
+
 
 const About = () => {
     const [info] = useState(aboutInfo[0]); 
@@ -19,10 +25,8 @@ const About = () => {
     <motion.div
       whileInView={{ opacity: [0, 1] }}
       transition={{ duration: 0.1 }}
-      className="portfolio-img"   
-    >
+      className="portfolio-img">
     <img id="Photo" src={img} alt=""/>
-
     </motion.div>
 
 
@@ -51,6 +55,22 @@ const About = () => {
     </motion.div>
     
   </div>  
+
+
+<section className="tabs">
+<h2 className="title">where i worked</h2>
+<div className="tabs__list">
+
+</div>
+
+</section>
+
+
+
+
+
+
+  
   </MainContainer>
 )
 }
