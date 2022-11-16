@@ -1,19 +1,18 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import img from '../../assets/Sarah.jpeg'; 
+import img from '../../assets/images/Sarah.jpeg'; 
 import { aboutInfo } from "pages/skills/data";
 import { tabAnimation } from "home/Home";
-import { DestinationTitle } from "GlobalStyles";
+import { DestinationTitle, MainContainer } from "GlobalStyles";
 
 const About = () => {
     const [info] = useState(aboutInfo[0]); 
 
   return (
-    <>
-
+    <MainContainer>
     <DestinationTitle>
       <span>03</span>
-      <h1>Chapter.Skills.</h1>
+      <h1>Chapter.About.</h1>
     </DestinationTitle>
 
     <div className="MainInfo">
@@ -52,7 +51,7 @@ const About = () => {
     </motion.div>
     
   </div>  
-  </>
+  </MainContainer>
 )
 }
 

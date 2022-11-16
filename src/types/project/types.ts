@@ -4,8 +4,8 @@ export interface IProjectCard {
     tags: string[];
     repoLink: string;
     type: 'Website' | 'CLI' | 'Misc' | string;
+    image: string;
   }
-
 
   export interface Project {
     name: string;
@@ -13,7 +13,9 @@ export interface IProjectCard {
     tags: string[];
     type: ProjectType;
     repoLink: string;
+    image: string;
   }
+  
 
 export interface IDestinations{
   worked: string; 

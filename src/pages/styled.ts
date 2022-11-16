@@ -13,14 +13,18 @@ width: calc((100% / 2) - 30px);
 border-radius: 8px;
 transition: all 0.2s ease-in-out;
 background-color: #1a1b1e;
+
 @media screen and (max-width: 991px) {
   width: calc((100% / 2) - 30px);
 }
  
 @media screen and (max-width: 767px) {
-    width: 100%;
+  width: 100%;
   }
 
+  img{
+    width: calc((100% / 2) - 30px);
+  }
   :hover {
     {
       background-color: #2a2b30;;
@@ -133,6 +137,12 @@ card__inner {
 
 
 //styles category 
+
+export const Block = styled.div`
+
+
+`
+
 
 export const CategoryContainer = styled.div`
 padding: 5%;

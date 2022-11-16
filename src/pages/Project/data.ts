@@ -1,3 +1,5 @@
+
+
 import { Project, IDestinations, ProjectType} from '../../types/project/types';
 
 export const dest: IDestinations[] = [
@@ -18,6 +20,7 @@ export const projects: Project[] = [
     type: ProjectType.BOT,
     tags: ['TypeScript', 'Node.js', 'Telegraf'],
     repoLink: 'https://github.com/tfkhdyt/translate-bot',
+    image: "moviesApp", 
   },
   {
     name: 'Portfolio Website',
@@ -25,6 +28,8 @@ export const projects: Project[] = [
     type: ProjectType.WEB,
     tags: ['TypeScript', 'Next.js', 'Tailwind CSS'],
     repoLink: 'https://github.com/tfkhdyt/web-portfolio',
+    image: "moviesApp", 
+
   },
   {
     name: 'Gatotkaca',
@@ -32,6 +37,7 @@ export const projects: Project[] = [
     type: ProjectType.WEB,
     tags: ['Python', 'SearXNG'],
     repoLink: 'https://github.com/tfkhdyt/gatotkaca',
+    image: "moviesApp", 
   },
   {
     name: 'Random Quote Generator',
@@ -39,6 +45,7 @@ export const projects: Project[] = [
     type: ProjectType.WEB,
     tags: ['TypeScript', 'Next.js', 'Tailwind CSS'],
     repoLink: 'https://github.com/tfkhdyt/random-quote-generator',
+    image: "moviesApp", 
   },
   {
     name: 'Full Stack Roadmap',
@@ -46,6 +53,7 @@ export const projects: Project[] = [
     type: ProjectType.WEB,
     tags: ['TypeScript', 'Next.js', 'NestJS'],
     repoLink: 'https://github.com/tfkhdyt/full-stack-roadmap',
+    image: "moviesApp", 
   },
   {
     name: 'LAM Final Project',
@@ -53,6 +61,7 @@ export const projects: Project[] = [
     type: ProjectType.WEB,
     tags: ['JavaScript', 'Next.js', 'Tailwind CSS'],
     repoLink: 'https://github.com/tfkhdyt/tugas-akhir-aljabar-linier-matriks',
+    image: "moviesApp", 
   },
   {
     name: 'KBBI Bot',
@@ -60,6 +69,7 @@ export const projects: Project[] = [
     type: ProjectType.BOT,
     tags: ['TypeScript', 'Cheerio', 'Telegraf'],
     repoLink: 'https://github.com/tfkhdyt/kbbi-bot',
+    image: "moviesApp", 
   },
   {
     name: 'Movie Bot',
@@ -67,6 +77,7 @@ export const projects: Project[] = [
     type: ProjectType.BOT,
     tags: ['Node.js', 'JavaScript', 'Telegraf'],
     repoLink: 'https://github.com/tfkhdyt/tfkhdyt-movie-bot',
+    image: "moviesApp", 
   },
   {
     name: 'Bayarcoek',
@@ -74,6 +85,7 @@ export const projects: Project[] = [
     type: ProjectType.CLI,
     tags: ['Node.js', 'JavaScript', 'Commander.js'],
     repoLink: 'https://github.com/tfkhdyt/bayarcoek',
+    image: "moviesApp", 
   },
   {
     name: '21 Cineplex API',
@@ -81,6 +93,7 @@ export const projects: Project[] = [
     type: ProjectType.API,
     tags: ['TypeScript', 'NestJS', 'Cheerio'],
     repoLink: 'https://github.com/tfkhdyt/21cineplex-api',
+    image: "moviesApp", 
   },
   {
     name: 'Form to Telegram API',
@@ -89,6 +102,7 @@ export const projects: Project[] = [
     type: ProjectType.API,
     tags: ['NestJS', 'TypeScript', 'Telegraf'],
     repoLink: 'https://github.com/tfkhdyt/message-form-to-telegram-api',
+    image: "moviesApp", 
   },
   {
     name: 'Coursework',
@@ -96,6 +110,7 @@ export const projects: Project[] = [
     type: ProjectType.MISC,
     tags: ['Java', 'C++', 'Pascal'],
     repoLink: 'https://github.com/tfkhdyt/tugas-kuliah',
+    image: "moviesApp", 
   },
   {
     name: 'Anime Naon Ieu?',
@@ -103,6 +118,7 @@ export const projects: Project[] = [
     type: ProjectType.BOT,
     tags: ['Node.js', 'JavaScript', 'Telegraf'],
     repoLink: 'https://github.com/tfkhdyt/anime-naon-ieu',
+    image: "moviesApp", 
   },
   {
     name: 'MovieDB',
@@ -110,6 +126,7 @@ export const projects: Project[] = [
     type: ProjectType.WEB,
     tags: ['JavaScript', 'Bootstrap'],
     repoLink: 'https://github.com/tfkhdyt/imdb',
+    image: "moviesApp", 
   },
   {
     name: '30 Hari Jago JavaScript',
@@ -117,6 +134,7 @@ export const projects: Project[] = [
     type: ProjectType.WEB,
     tags: ['JavaScript', 'Bootstrap'],
     repoLink: 'https://github.com/tfkhdyt/30DaysJagoJavaScript',
+    image: "moviesApp", 
   },
   {
     name: 'School Website',
@@ -124,6 +142,7 @@ export const projects: Project[] = [
     type: ProjectType.WEB,
     tags: ['PHP', 'Bootstrap'],
     repoLink: 'https://github.com/tfkhdyt/web-sekolah',
+    image: "moviesApp", 
   },
   {
     name: 'Old Portfolio Website',
@@ -131,5 +150,6 @@ export const projects: Project[] = [
     type: ProjectType.WEB,
     tags: ['JavaScript', 'Bootstrap'],
     repoLink: 'https://github.com/tfkhdyt/tfkhdyt-portfolio',
+    image: "moviesApp", 
   }
 ];

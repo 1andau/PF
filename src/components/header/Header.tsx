@@ -13,7 +13,6 @@ import {
 } from './styled';
 import * as FaIcons from 'react-icons/fa';
 import sticker from '../../assets/images/space.png';
-import CV from '../../assets/CV/cv-Sarah.pdf';
 
 export const SidebarData = [
   {
@@ -57,18 +56,18 @@ const Header: React.FunctionComponent = () => {
               <li>
                 <a href="/portfolio">Portfolio</a>
               </li>
+
+              <li>
+                <a href="/about">About</a>
+              </li>
+
               <li>
                 <a href="/contacts">Contacts</a>
               </li>
               <li>
                 <a href="/skills">skills</a>
               </li>
-              <li>
-                <a href={CV} download>
-                  CV
-                </a>
-              </li>
-
+      
             </ul>
           </NavStroke>
         </Menu>
@@ -82,11 +81,7 @@ const Header: React.FunctionComponent = () => {
             setActive(!isActive);
           }}></div>
         <Navbar>
-          <li>
-            <a href={CV} download>
-              CV
-            </a>
-          </li>
+     
 
           <MenuIconOpen to="/home" onClick={showSidebar}>
             <FaIcons.FaBars />

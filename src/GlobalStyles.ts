@@ -35,6 +35,13 @@ margin: 20px 20px;
     font-weight: 500;
     color: white; 
   }
+
+
+
+
+
+
+  
 `;
 
 

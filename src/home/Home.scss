@@ -69,42 +69,6 @@
       margin-top: 5rem;
     }
   
-    .tabs-menu {
-      button {
-        font-family: var(--font-barlow-condensed);
-        font-weight: 400;
-        font-size: 1.6rem;
-        letter-spacing: 0.27rem;
-        border: none;
-        outline: none;
-        background: transparent;
-        color: var(--color-white);
-        text-transform: uppercase;
-        margin: 0rem 1rem 0rem 0rem;
-        cursor: pointer;
-        position: relative;
-  
-        @media screen and (max-width: 430px) {
-          font-size: 1.4rem;
-        }
-  
-        @media (min-width: 768px) and (max-width: 1180px) {
-          font-size: 1.6rem;
-        }
-  
-        &.active::after {
-          content: "";
-          position: absolute;
-          top: 3rem;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 3px;
-          background-color: var(--color-white);
-        }
-      }
-    }
-  
     .portfolio-facts {
       margin-top: 3rem;
   
@@ -169,6 +133,17 @@
             text-transform: uppercase;
             color: var(--color-blue);
           }
+          .button_CV{
+            width: 130px;
+            height: 50px;
+            background-color: aqua;
+            border: none;
+            color: white;
+            font-weight: 500;
+            font-size: 15px;
+            border-radius: 10px;
+            margin-top: 2rem; 
+          }
   
           h3 {
             font-family: var(--font-bellefair);
@@ -177,15 +152,6 @@
             color: var(--color-white);
             text-transform: uppercase;
             margin-top: 2rem;
-
-            a{
-                font-family: var(--font-bellefair);
-            font-weight: 400;
-            font-size: 2.8rem;
-            color: var(--color-white);
-            text-transform: uppercase;
-            margin-top: 2rem;   
-            }
           }
         }
       }

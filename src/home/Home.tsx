@@ -57,7 +57,7 @@ export const Home = () => {
                 </div>
                 <div className="stat">
                   <h2>More information in my CV</h2>
-                  <h3><a href={CV} download>CV</a></h3>  
+                  <button className='button_CV'><a href={CV} download>Download CV</a> </button> 
                 </div>
               </div>
             </motion.div>
