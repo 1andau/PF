@@ -1,18 +1,24 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import img from '../../assets/images/Sarah.jpeg'; 
 import { aboutInfo } from "./data";
 import { tabAnimation } from "home/Home";
 import { DestinationTitle, MainContainer } from "GlobalStyles";
-import { IEducationAndExperience } from "./data";
-
-
-
-
-
+import { experienceData, ExperienceType } from "./data";
+import styles from './about.module.scss';
+import Experiece from "./Experiece";
 
 const About = () => {
-    const [info] = useState(aboutInfo[0]); 
+const [info] = useState(aboutInfo[0]); 
+
+const category = Object.values(ExperienceType)
+const [activeTab, setActiveTab] = useState(ExperienceType.UW);
+
+const handleTabClick = useCallback((JobTitle: ExperienceType) => {
+  setActiveTab(JobTitle);
+}, []);
+
+console.log(handleTabClick);
 
   return (
     <MainContainer>
@@ -21,7 +27,7 @@ const About = () => {
       <h1>Chapter.About.</h1>
     </DestinationTitle>
 
-    <div className="MainInfo">
+    {/* <div className="MainInfo">
     <motion.div
       whileInView={{ opacity: [0, 1] }}
       transition={{ duration: 0.1 }}
@@ -54,14 +60,44 @@ const About = () => {
       </AnimatePresence>
     </motion.div>
     
-  </div>  
+  </div>   */}
 
 
-<section className="tabs">
-<h2 className="title">where i worked</h2>
-<div className="tabs__list">
+<section className='tabs'>
+<div className='tabs__list'>
+{category.map((value) => (
+  		<button
+      onClick={() => handleTabClick(value)} key={value}
+    className={activeTab === value ? 'active': '' }
+    >
+      {value}
+    </button>
+))}
+</div>
+
+<div className={styles.tabs__pannel}>
+{experienceData.map((value) => (
+ <Experiece
+ responsibilities={value.responsibilities}
+ name = {value.name}
+ company={value.company}
+ startDate = {value.startDate}
+ endDate = {value.endDate}
+ stack = {value.stack}
+ type = {value.type}
+key={value.name}
+/> 
+
+))}
+
 
 </div>
+
+
+
+
+
+
 
 </section>
 

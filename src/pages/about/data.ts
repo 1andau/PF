@@ -11,28 +11,33 @@ export interface IAboutInfo{
       description:
         'Hello! My name is Sarah Landau. I am a frontend dev from St. Petersburg. I love open-source, beautiful solutions, clean code, and all sorts of geeky stuff. In my free time, I learn new technology,  ride a board, run a Telegram channel, create small projects, work with 3d printing.',
       },
-    
   ];
 
+  export enum ExperienceType{
+    UW = 'UpWork',
+    TM = 'T-Mobile', 
+  }
   export interface IEducationAndExperience{
     id?: number;
-    JobTitle: string; 
-    experience: string; 
+    name: string; 
+    company: string; 
     startDate: string; 
     endDate: string; 
-    type: string;
+    type: ExperienceType;
     responsibilities: string[]; 
     stack: string[]; 
-    
   }
+
+
   
-  export const experience:IEducationAndExperience[] = [
+  
+  export const experienceData: IEducationAndExperience[] = [
   {
-    JobTitle: 'frontent / fullstack developer',
-    experience: 'UpWork',
+    name: 'frontent / fullstack developer',
+    company: 'UpWORK',
     startDate: 'January 21',
     endDate: 'until now',
-    type: 'upwork', 
+    type: ExperienceType.UW, 
     responsibilities: [
       'Ensuring user experience determines design choices.', 
       'Developing features to enhance the user experience.',
@@ -41,11 +46,11 @@ export interface IAboutInfo{
     stack: ['JavaScript', 'React', 'Redux', 'TypeScript', 'Webpack', 'Sass', 'Next JS' ], 
   }, 
   {
-    JobTitle: 'Frontend developer',
-    experience: 'Deutsche Telekom IT Solutions',
+    name: 'Frontend developer',
+    company: 'T-Mobile',
     startDate: 'December 2021',
     endDate: 'March 2022',
-    type: '', 
+    type: ExperienceType.TM, 
     responsibilities: [
       'Development of authorization/validation forms', 
       'Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness.'

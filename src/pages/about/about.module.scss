@@ -1,18 +1,10 @@
-@use "@styles/variables.scss";
-
 .tabs {
-  opacity: 0;
-  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 20, 0, 1);
-  visibility: visible;
-  will-change: opacity, transform;
+margin-top: 40px;
 
   &__list {
     display: flex;
     margin: 0 0 10px;
-    overflow-x: scroll;
-    max-width: 100%;
-    scroll-snap-type: x proximity;
-    overscroll-behavior-x: contain;
+
 
     &::-webkit-scrollbar {
       height: 12px;
@@ -25,7 +17,7 @@
     &::-webkit-scrollbar-thumb {
       background: none;
       background-color: #495670;
-      border: 3px solid variables.$bg-color;
+      border: 3px solid #000028;
       border-radius: 10px;
     }
 
@@ -36,9 +28,9 @@
     &_item {
       background: none;
       border: none;
-      color: variables.$text-color;
+      color: #99aacc;
       cursor: pointer;
-      font-size: variables.$fz-md;
+      font-size: 1.6rem;
       font-weight: bold;
       min-width: 120px;
       scroll-snap-align: start;
@@ -55,14 +47,14 @@
         left: 0px;
         right: 0px;
         height: 2px;
-        background-color: variables.$main-color;
+        background-color: #16ffe2;
         transform: scaleX(0);
         transform-origin: center bottom;
         transition: transform 0.5s ease;
       }
 
       &_active {
-        color: variables.$main-color;
+        color: #16ffe2;
 
         &::before {
           transform: scaleX(0.9);
@@ -72,7 +64,7 @@
       &:hover,
       &:active,
       &:focus {
-        color: variables.$main-color;
+        color: #16ffe2;
         outline: none;
       }
     }
@@ -104,7 +96,7 @@
 
       // Bullet point
       &::before {
-        background-color: variables.$main-color;
+        background-color: #16ffe2;
         border-radius: 50%;
         content: "";
         filter: brightness(0.8);
@@ -117,7 +109,7 @@
 
       // Line
       &::after {
-        background-color: variables.$main-color;
+        background-color: #16ffe2;
         border-radius: 1rem;
         content: "";
         filter: brightness(0.8);
@@ -136,21 +128,21 @@
   }
 
   &__title {
-    color: variables.$light-text-color;
-    font-size: variables.$fz-md;
+    color: #ccddff;
+    font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 1rem;
   }
 
   &__date {
-    color: variables.$text-color;
-    font-size: variables.$fz-sm;
+    color: #99aacc;
+    font-size: 1.4rem;;
     font-weight: bold;
   }
 
   &__description {
-    color: variables.$text-color;
-    font-size: variables.$fz-sm;
+    color: #99aacc;
+    font-size: 1.4rem;;
     margin: 1rem 0 1rem 2rem;
 
     &_item {
@@ -162,7 +154,7 @@
 
       &::before {
         content: "▹";
-        color: variables.$main-color;
+        color: #16ffe2;
         font-size: 2rem;
         left: -2rem;
         position: absolute;
@@ -176,18 +168,15 @@
     flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 2rem;
-
     &_item {
-      background-color: variables.$secondary-color;
       border-radius: 1rem;
-      color: variables.$dark-text-color;
-      font-size: variables.$fz-xxs;
+      color: aqua;
+      font-size: 1.2rem;
       font-weight: 700;
       list-style: none;
       padding: 0.2rem 0.8rem;
       text-align: center;
       width: fit-content;
-      white-space: nowrap;
     }
   }
 }

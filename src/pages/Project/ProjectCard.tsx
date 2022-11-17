@@ -1,9 +1,18 @@
 import * as React from "react";
 import styles from './Project.module.scss'; 
 import photo from '../../assets/images/screenshot.png'
-import { IProjectCard } from "@/types/project/types";
 import { Button } from "pages/button/Butoon";
 import { Tags } from "pages/styled";
+
+export interface IProjectCardProps {
+    name: string;
+    description: string;
+    tags: string[];
+    repoLink: string;
+    type: 'Website' | 'CLI' | 'Misc' | string;
+    image: string;
+  }
+
 
  export const CardImages = {
  	moviesApp: {
@@ -12,7 +21,7 @@ import { Tags } from "pages/styled";
  	},
 }
 const ProjectCard = (
-     { name, description, image, tags, repoLink, type }: IProjectCard
+     { name, description, image, tags, repoLink, type }: IProjectCardProps
     ) => {
 	const cardRef = React.useRef<HTMLDivElement>(null);
 	return (
@@ -58,6 +67,7 @@ const ProjectCard = (
                 {tag}
               </p>
             ))}
+
           </Tags>
 
 			<Button size="small" href={repoLink} target="_blank" rel="noopener noreferrer" link>

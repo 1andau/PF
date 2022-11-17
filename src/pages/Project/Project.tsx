@@ -1,7 +1,6 @@
 import { DestinationTitle, MainContainer } from '../../GlobalStyles';
-import {projects} from './data';
 import { useState, useRef } from 'react';
-import { ProjectType } from '../../types/project/types';
+import { ProjectType, projects } from './data';
 import { useCallback } from 'react';
 import { CategoryContainer } from 'pages/styled';
 import {ProjectCard} from './ProjectCard';
@@ -11,11 +10,13 @@ import styles from './Project.module.scss';
 export const Portfolio = () => {
   const category = Object.values(ProjectType);
   const [activeTab, setActiveTab] = useState(ProjectType.WEB);
+
 	const sectionRef = useRef<HTMLDivElement>(null);
 
   const handleTabClick = useCallback((name: ProjectType) => {
     setActiveTab(name);
   }, []);
+
 
   return (
     <MainContainer>

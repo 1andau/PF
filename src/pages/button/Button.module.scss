@@ -4,12 +4,10 @@ $body-bg: #000028;
 $card-bg: #000038;
 $hover-bg: #0a103b;
 $main-color: #16ffe2;
-$secondary-color: #10eed2;
 $red-color: #ff6666;
 $green-color: #66ff66;
 $main-text-color: #10eed2;
 $light-text-color: #ccddff;
-$text-color: #99aacc;
 $dark-text-color: #000000;
 $shadow-color: #000000;
 $gradient: #000020 fixed linear-gradient(#000014, #000028 70%, #0a103b);
@@ -90,7 +88,7 @@ $fz-lg: 1.8rem;
     left: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(to right, transparent, $secondary-color);
+    background: linear-gradient(to right, transparent, #10eed2);
   }
 
   span:nth-child(2) {
@@ -99,7 +97,7 @@ $fz-lg: 1.8rem;
     width: 2px;
     height: 100%;
     transform: translateY(-100%);
-    background: linear-gradient(to bottom, transparent, $secondary-color);
+    background: linear-gradient(to bottom, transparent, #10eed2);
   }
 
   span:nth-child(3) {
@@ -107,7 +105,7 @@ $fz-lg: 1.8rem;
     left: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(to left, transparent, $secondary-color);
+    background: linear-gradient(to left, transparent, #10eed2);
   }
 
   span:nth-child(4) {
@@ -116,7 +114,7 @@ $fz-lg: 1.8rem;
     width: 2px;
     height: 100%;
     transform: translateY(100%);
-    background: linear-gradient(to top, transparent, $secondary-color);
+    background: linear-gradient(to top, transparent, #10eed2);
   }
 
   span:nth-child(5) {
@@ -126,7 +124,7 @@ $fz-lg: 1.8rem;
     width: 100%;
     height: 2px;
     transform: translateX(-100%);
-    background: linear-gradient(to right, transparent, $secondary-color);
+    background: linear-gradient(to right, transparent, #10eed2);
   }
 
   span:nth-child(6) {
@@ -135,7 +133,7 @@ $fz-lg: 1.8rem;
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(to bottom, transparent, $secondary-color);
+    background: linear-gradient(to bottom, transparent, #10eed2);
   }
 
   span:nth-child(7) {
@@ -145,7 +143,7 @@ $fz-lg: 1.8rem;
     width: 100%;
     height: 2px;
     transform: translateX(100%);
-    background: linear-gradient(to left, transparent, $secondary-color);
+    background: linear-gradient(to left, transparent, #10eed2);
   }
 
   span:nth-child(8) {
@@ -154,7 +152,7 @@ $fz-lg: 1.8rem;
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(to top, transparent, $secondary-color);
+    background: linear-gradient(to top, transparent, #10eed2);
   }
 
   &:hover,

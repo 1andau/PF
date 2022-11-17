@@ -1,17 +1,20 @@
+export enum ProjectType {
+  WEB = 'Website',
+  BOT = 'Bot',
+  CLI = 'CLI',
+  API = 'API',
+  MISC = 'Misc',
+}
 
-
-import { Project, IDestinations, ProjectType} from '../../types/project/types';
-
-export const dest: IDestinations[] = [
-  {
-    worked: 'Frontend Developer',
-    name: 'Sarah Landau',
-    description:
-      'Hello! My name is Sarah Landau. I am a frontend dev from St. Petersburg. I love open-source, beautiful solutions, clean code, and all sorts of geeky stuff. In my free time, I learn new technology,  ride a board, run a Telegram channel, create small projects, work with 3d printing.',
-    distance: '2 years',
-  },
-];
-
+  export interface Project {
+    name: string;
+    description: string;
+    tags: string[];
+    type: ProjectType;
+    repoLink: string;
+    image: string;
+  }
+  
 
 export const projects: Project[] = [
   {

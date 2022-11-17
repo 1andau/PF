@@ -1,4 +1,10 @@
-import { ISkills } from "../../types/skills/types"
+export interface ISkills {
+  id?: number;
+  title: string;
+  icon: string;
+  type: string;
+  isMainSkill?: boolean;
+}
 
 export const skills : ISkills[] = [
 
