@@ -1,39 +1,37 @@
 import {useState, useCallback} from 'react'
-import styles from './about.module.scss'; 
+// import styles from './about.module.scss'; 
 import {ExperienceType} from './data'
+import './about.scss'
 
-type ExperienceProps = {
+
+export interface ExperienceProps{
   name: string; 
   company: string; 
   startDate: string; 
   endDate: string; 
   responsibilities: string[]; 
   stack: string[]; 
-  type: 'UpWork' | 'T-Mobile' | string;
+  type: 'Work experience' | 'Education' | string;
 }
 
 const Experiece = ({name,startDate,endDate, type,  responsibilities, stack, company }:ExperienceProps ) => {	
-	const category = Object.values(ExperienceType)
-	const [activeTab, setActiveTab] = useState(ExperienceType.UW);
 	
-	const handleTabClick = useCallback((JobTitle: ExperienceType) => {
-	  setActiveTab(JobTitle);
-	}, []);
-
   return (
 	<>
 
-				<ul className={`${styles.tab} ${company.length > 1 ? styles.tab__line : ""}`}>
-							<li  className={styles.tab__item}>
-								<h3 className={styles.tab__title}>{name}</h3>
-								<p className={styles.tab__date}>
+				<ul className={`${'tab'} ${company.length > 1 ? 'tab__line' : ""}`}>
+							<li  className='tab__item'>
+							<h3 className='tab__title'>{company}</h3>
+
+								<h3 className='tab__title'>{name}</h3>
+								<p className='tab__date'>
 									{startDate} - {endDate}
 								</p>
 
 
-								<ul className={styles.tab__description}>
+								<ul className='tab__description'>
 									{responsibilities.map((item: string, k: number) => (
-										<li key={k} className={styles.tab__description_item}>
+										<li key={k} className='tab__description_item'>
 											{item}
 										</li>
 									))}
@@ -41,9 +39,9 @@ const Experiece = ({name,startDate,endDate, type,  responsibilities, stack, comp
 
 
 
-								<ul className={styles.tab__skills}>
+								<ul className='tab__skills'>
 									{stack.map((item: string, k: number) => (
-										<li key={k} className={styles.tab__skills_item}>
+										<li key={k} className='tab__skills_item'>
 											{item}
 										</li>
 									))}

@@ -14,11 +14,10 @@ export interface IAboutInfo{
   ];
 
   export enum ExperienceType{
-    UW = 'UpWork',
-    TM = 'T-Mobile', 
+    WEXP = 'Work experience',
+    ED = 'Education', 
   }
-  export interface IEducationAndExperience{
-    id?: number;
+  export interface EducationAndExperience{
     name: string; 
     company: string; 
     startDate: string; 
@@ -28,16 +27,13 @@ export interface IAboutInfo{
     stack: string[]; 
   }
 
-
-  
-  
-  export const experienceData: IEducationAndExperience[] = [
+  export const experienceData: EducationAndExperience[] = [
   {
     name: 'frontent / fullstack developer',
     company: 'UpWORK',
     startDate: 'January 21',
     endDate: 'until now',
-    type: ExperienceType.UW, 
+    type: ExperienceType.WEXP, 
     responsibilities: [
       'Ensuring user experience determines design choices.', 
       'Developing features to enhance the user experience.',
@@ -50,13 +46,45 @@ export interface IAboutInfo{
     company: 'T-Mobile',
     startDate: 'December 2021',
     endDate: 'March 2022',
-    type: ExperienceType.TM, 
+    type: ExperienceType.WEXP, 
     responsibilities: [
       'Development of authorization/validation forms', 
       'Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness.'
     ],
     stack: ['JavaScript', 'React', 'Redux', 'TypeScript', 'Webpack', 'Sass', ], 
-  }
+  },
+
+  {
+    name: 'Aerospace Instrumentation Engineer',
+    company: 'St. Petersburg State University of Aerospace Instrumentation',
+    startDate: 'June 2014',
+    endDate: 'June 2018',
+    type: ExperienceType.ED, 
+    responsibilities: [
+      'The Department of Gyroscopic Systems and Stabilizing Devices of air and space vehicles was established in September 1945 within the Faculty of Aviation Devices and Automation of Leningrad Aviation Institute (at present – Saint Petersburg State University of Aerospace Instrumentation).', 
+      'The merger of the Department of Space Navigation Systems, Navigation and Stabilization and the Department of Space Systems Operation in September 2013resulted in the establishment of the Department of Operation and Management of Space Systems.'
+    ],
+    stack: [''], 
+  },  
+   {
+    name: 'Java Development',
+    company: 'LevelUP',
+    startDate: 'June 2018',
+    endDate: 'December 2018',
+    type: ExperienceType.ED, 
+    responsibilities: ['basic Java learning'],
+    stack: ['Java' ], 
+  }, 
+  {
+    name: 'Frontend development',
+    company: 'Hexlet',
+    startDate: 'June 2019',
+    endDate: 'March 2020',
+    type: ExperienceType.ED, 
+    responsibilities: ['Global course in JavaScript, learning React js frameworks, react native, React js functional and class components, learning git'],
+    stack: ['React', 'JavaScript', 'React js', 'React Native', 'Git', 'GitFlow' ], 
+  }, 
+
   ]
 
 

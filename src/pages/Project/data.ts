@@ -5,7 +5,6 @@ export enum ProjectType {
   API = 'API',
   MISC = 'Misc',
 }
-
   export interface Project {
     name: string;
     description: string;

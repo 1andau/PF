@@ -1,21 +1,22 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import img from '../../assets/images/Sarah.jpeg'; 
 import { aboutInfo } from "./data";
 import { tabAnimation } from "home/Home";
 import { DestinationTitle, MainContainer } from "GlobalStyles";
 import { experienceData, ExperienceType } from "./data";
-import styles from './about.module.scss';
 import Experiece from "./Experiece";
+import  './about.scss';
 
 const About = () => {
 const [info] = useState(aboutInfo[0]); 
 
 const category = Object.values(ExperienceType)
-const [activeTab, setActiveTab] = useState(ExperienceType.UW);
+const [activeTab, setActiveTab] = useState(ExperienceType.WEXP);
+const sectionRef = useRef<HTMLDivElement>(null);
 
-const handleTabClick = useCallback((JobTitle: ExperienceType) => {
-  setActiveTab(JobTitle);
+const handleTabClick = useCallback((name: ExperienceType) => {
+  setActiveTab(name);
 }, []);
 
 console.log(handleTabClick);
@@ -27,7 +28,7 @@ console.log(handleTabClick);
       <h1>Chapter.About.</h1>
     </DestinationTitle>
 
-    {/* <div className="MainInfo">
+    <div className="MainInfo">
     <motion.div
       whileInView={{ opacity: [0, 1] }}
       transition={{ duration: 0.1 }}
@@ -60,23 +61,28 @@ console.log(handleTabClick);
       </AnimatePresence>
     </motion.div>
     
-  </div>   */}
+  </div>  
 
 
-<section className='tabs'>
+<section className='tabs' ref={sectionRef}>
 <div className='tabs__list'>
-{category.map((value) => (
+{category
+.map((value) => (
   		<button
       onClick={() => handleTabClick(value)} key={value}
-    className={activeTab === value ? 'active': '' }
+    className={`${'tabs__list_item'} ${
+      activeTab === value ? 'tabs__list_item_active' : ""
+    }`}
     >
       {value}
     </button>
 ))}
 </div>
 
-<div className={styles.tabs__pannel}>
-{experienceData.map((value) => (
+<div className='tabs__pannel'>
+{experienceData
+.filter((value) => value.type === activeTab)
+.map((value) => (
  <Experiece
  responsibilities={value.responsibilities}
  name = {value.name}
