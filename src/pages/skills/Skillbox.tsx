@@ -1,7 +1,6 @@
 import React from 'react';
 import { SkillCard, SkillIcons } from 'pages/styled';
 
-
 export interface ISkillBox {
   title: string;
   icon: string;

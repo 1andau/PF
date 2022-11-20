@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   MenuIconOpen,
   Navbar,
@@ -13,38 +13,51 @@ import {
 } from './styled';
 import * as FaIcons from 'react-icons/fa';
 import sticker from '../../assets/images/space.png';
+import { ReactNode } from 'react';
+import { SidebarData } from './data';
+import { useDispatch } from 'react-redux';
+import { setIsMenuOpened } from '../../redux/slice';
 
-export const SidebarData = [
-  {
-    title: 'Home',
-    path: '/',
-    icon: <FaIcons.FaHome />,
-  },
-  {
-    title: 'Project',
-    path: '/project',
-    icon: <FaIcons.FaUsers />,
-  },
-    {
-    title: 'Skills',
-    path: '/skills',
-    icon: <FaIcons.FaTasks />,
-  },
-  {
-    title: 'Contacts',
-    path: '/contacts',
-    icon: <FaIcons.FaRegArrowAltCircleRight />,
-  },
-];
+export interface LayoutProps {
+  children: ReactNode;
+}
 
-const Header: React.FunctionComponent = () => {
+export const handleDrawer = (target: string) => {
+  setTimeout(() => {
+    document.querySelector(target)!.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }, 150);
+};
+
+
+const Header = () => {
+  const dispatch = useDispatch(); 
+
   const [close, setClose] = React.useState(false);
   const showSidebar = () => setClose(!close);
+  
   const [isActive, setActive] = React.useState(false);
+  const [scrollY, setScrollY] = useState<number>(0);
+
+
+
+
+  
+  const handleDrawer = (target: string) => {
+    setTimeout(() => {
+      document.querySelector(target)!.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }, 150);
+  };
+
 
   return (
     <>
-      <Container>
+      <Container >
         <Logo src={sticker} />
 
         <Menu className={isActive ? 'active' : ''}>
@@ -81,8 +94,6 @@ const Header: React.FunctionComponent = () => {
             setActive(!isActive);
           }}></div>
         <Navbar>
-     
-
           <MenuIconOpen to="/home" onClick={showSidebar}>
             <FaIcons.FaBars />
           </MenuIconOpen>
@@ -98,7 +109,6 @@ const Header: React.FunctionComponent = () => {
             return (
               <MenuItems key={index}>
                 <MenuItemLinks to={item.path}>
-                  {item.icon}
                   <span style={{ marginLeft: '16px' }}>{item.title}</span>
                 </MenuItemLinks>
               </MenuItems>

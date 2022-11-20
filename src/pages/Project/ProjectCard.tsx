@@ -1,31 +1,57 @@
 import * as React from "react";
-import styles from './Project.module.scss'; 
 import photo from '../../assets/images/screenshot.png'
+import snake from '../../assets/images/snake.jpeg'
+import guide from '../../assets/images/guide.png'
+import sneakers from '../../assets/images/sneakers.png'
+import validate from '../../assets/images/validate.png'
+import spoty from '../../assets/images/spoty.png'
+
 import { Button } from "pages/button/Butoon";
 import { Tags } from "pages/styled";
+import './project.scss'
+
 
 export interface IProjectCardProps {
     name: string;
     description: string;
     tags: string[];
     repoLink: string;
-    type: 'Website' | 'CLI' | 'Misc' | string;
     image: string;
   }
 
 
  export const CardImages = {
- 	moviesApp: {
+ 	PF: {
  		sm: photo,
  		md: photo,
  	},
+	 SnakeGame:{
+		sm: snake,
+		md: snake,
+	 }, 
+	 ValidateForm:{
+		sm: validate,
+		md: validate,
+	 }, 
+	 Guide:{
+		sm: guide,
+		md: guide,
+	 }, 
+	 Sneakers:{
+		sm: sneakers,
+		md: sneakers,
+	 }, 
+	 Spotify:{
+		sm: spoty,
+		md: spoty,
+	 }, 
 }
 const ProjectCard = (
-     { name, description, image, tags, repoLink, type }: IProjectCardProps
+     { name, description, image, tags, repoLink }: IProjectCardProps
     ) => {
 	const cardRef = React.useRef<HTMLDivElement>(null);
 	return (
-		<div className={`${styles.card}`} key={name} ref={cardRef}>
+		<div className='card' key={name} ref={cardRef}>
 		<h3>{name}</h3>
 		<p>{description}</p>
 		<picture>
@@ -55,7 +81,7 @@ const ProjectCard = (
 				loading="lazy"
 			/>
 		</picture>
-		<div className={styles.card__links}>
+		<div className='card__links'>
 			<Button size="small" href={repoLink} target="_blank" rel="noopener noreferrer" link>
 				Project
 			</Button>
