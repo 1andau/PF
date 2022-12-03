@@ -4,7 +4,7 @@ import { projects } from './data';
 import {ProjectCard} from './ProjectCard';
 import './project.scss'; 
 
-export const Portfolio = () => {
+ const Project = () => {
 
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -36,3 +36,5 @@ export const Portfolio = () => {
     </MainContainer>
   );
 };
+
+export {Project}

@@ -1,6 +1,3 @@
-import {useState, useCallback} from 'react'
-// import styles from './about.module.scss'; 
-import {ExperienceType} from './data'
 import './about.scss'
 
 
@@ -14,7 +11,7 @@ export interface ExperienceProps{
   type: 'Work experience' | 'Education' | string;
 }
 
-const Experiece = ({name,startDate,endDate, type,  responsibilities, stack, company }:ExperienceProps ) => {	
+ const Experiece = ({name,startDate,endDate, type,  responsibilities, stack, company }:ExperienceProps ) => {	
 	
   return (
 	<>
@@ -56,4 +53,4 @@ const Experiece = ({name,startDate,endDate, type,  responsibilities, stack, comp
        )
 }
 
-export default Experiece
+export {Experiece}

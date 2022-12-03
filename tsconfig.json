@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
+    // "baseUrl": "./src",
     "target": "es5",
     "lib": [
       "dom",
@@ -8,12 +8,25 @@
       "esnext"
     ],
     "paths": {
-      "@/components/*": ["components/*"],
-      "@/redux/*": ["redux/*"],
-      "@/types/*": ["types/*"],
-      "@/styles/*": ["styles/*"]
+      "@*": [
+        "./src/*"
+      ],
+      "styles/*": [
+        "./src/styles/*"
+      ],
+      "assets/*": [
+        "./src/assets/*"
+      ],
+      "components/*": [
+        "./src/components/*"
+      ],
+      "pages/*": [
+        "./src/pages/*"
+      ],
     },
-    "allowJs": true,
+
+
+    "allowJs": false,
     "downlevelIteration": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -29,6 +42,6 @@
     
   },
   "include": [
-    "src", "**/*.ts", "**/*.tsx"
+    "src"
   ]
 }

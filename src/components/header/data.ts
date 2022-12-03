@@ -1,16 +1,20 @@
 export const SidebarData = [
     {
       title: 'Home',
-      path: '/',
+      path: '/home',
     },
     {
-      title: 'Project',
-      path: '/project',
+      title: 'Portfolio',
+      path: '/portfolio',
     },
       {
       title: 'Skills',
       path: '/skills',
     },
+    {
+        title: 'About',
+        path: '/about',
+      },
     {
       title: 'Contacts',
       path: '/contacts',

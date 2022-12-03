@@ -1,13 +1,14 @@
 import React from 'react'
 import { motion, AnimatePresence } from "framer-motion";
-import { DestinationTitle } from 'GlobalStyles';
+import { DestinationTitle } from '../../GlobalStyles';
 import { dest } from './data';
 import './Home.scss'; 
-import CV from '../assets/CV/cv-Sarah.pdf'; 
-import spaceImg from '../assets/images/space.png'; 
-import { Button } from 'pages/button/Butoon';
+import CV from '../../assets/CV/cv-Sarah.pdf'; 
+import spaceImg from '../../assets/images/space.png'; 
+import { tabAnimation } from '../../utils/utils';
+import { About, Contact, Project, Skills, Button, Loader  } from '../index';
 
-export const Home = () => {
+ const Home = () => {
     const [isSelected] = React.useState(dest[0]);
 
   return (
@@ -30,7 +31,7 @@ export const Home = () => {
           transition={{ duration: 0.8 }}
           className="portfolioDetail"
         >
-     
+ ъЭ    
           <AnimatePresence exitBeforeEnter initial={false}>
             <motion.div
               key={isSelected.name}
@@ -57,11 +58,6 @@ export const Home = () => {
 				Download CV
 			</Button>
 </div>
-
-
-
-
-
                 </div>
               </div>
             </motion.div>
@@ -72,18 +68,6 @@ export const Home = () => {
     </div>
   )
 }
- export const tabAnimation = {
-    hidden: {
-      y: 200,
-      opacity: 0,
-    },
-    show: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.8,
-        ease: "easeInOut",
-      },
-    },
-  };
 
+
+export {Home}; 

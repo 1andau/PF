@@ -2,13 +2,11 @@ import { useCallback, useState } from 'react';
 import { SkillBox } from './Skillbox';
 import { DestinationTitle, MainContainer } from '../../GlobalStyles';
 import { skills } from './data';
-import { Cards, Education } from 'pages/styled';
-import { CategoryContainer } from 'pages/styled';
+import { CategoryContainer, Cards } from '../../pages/styled';
 
-export const Skills = () => {
+ const Skills = () => {
   const [category] = useState<string[]>([...new Set(skills.map((value) => value.type))]);
   const [activeTab, setActiveTab] = useState(category[0]);
-
 
   const handleTabClick = useCallback((name: string) => {
     setActiveTab(name);
@@ -20,10 +18,6 @@ export const Skills = () => {
         <span>04</span>
         <h1>Chapter.Skills and Education.</h1>
       </DestinationTitle>
-
-
-
-
 
 
 {/* <Education>
@@ -92,3 +86,5 @@ export const Skills = () => {
 
   );
 };
+
+export {Skills}

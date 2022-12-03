@@ -15,7 +15,7 @@ interface ButtonProps {
 	[key: string]: any;
 }
 
-const Button = ({
+ const Button = ({
 	active,
 	children,
 	className = "",
@@ -47,4 +47,5 @@ const Button = ({
 	);
 };
 
-export { Button };
+
+export {Button}; 

@@ -1,26 +1,29 @@
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { GlobalStyle } from './GlobalStyles';
-import Header from './components/header/Header';
-import Main from './Main/Main';
-import { Portfolio } from './pages/Project/Project';
-import { Skills } from './pages/skills/Skills';
-import {Contact} from './pages/contact/ContactForm';
-import About from 'pages/about/About';
+import React from 'react';
+import { Loader,Layout } from './components/index';
+// import { Home } from "./components/index";
+import { Hero } from "./pages/Hero/Hero";
+// const Home = React.lazy(() =>
+// 	import("@components").then(({ Home }) => ({
+// 		default: Home,
+// 	}))
+// );
+
 function App() {
   return (
     <>
-    
       <GlobalStyle />
-      <Header/>
-      <Routes>
-        <Route path="/home" element={<Main />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/contacts" element={<Contact />} />
-        <Route path="/about" element={<About />} />
-
-      </Routes>
-    </>
+<React.Suspense fallback={<Loader />}>
+        {/* <Header /> */}
+        <Routes>
+        <Route path="/" element={<Layout />}>
+							<Route index element={<Hero />} />
+						</Route>
+          <Route path="*" element={<Navigate replace to="/" />} />
+        </Routes>
+      </React.Suspense>
+          </>
   );
 }
 

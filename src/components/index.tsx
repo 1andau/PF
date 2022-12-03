@@ -1,0 +1,13 @@
+export { Skills } from "./skills/Skills";
+export {About} from "./about/About";
+export { Home } from "./home/Home";
+export { ProjectCard } from "./Project/ProjectCard";
+export { Contact } from "./contact/ContactForm";
+export {Experiece} from "./about/Experiece";
+export { Project } from "./Project/Project";
+export {Loader} from './loader/Loader';
+export {Header} from './header/Header';
+export {Footer} from './footer/Footer';
+export {Layout} from './layout/Layout';
+export {Button} from './button/Butoon';
+export {Spinner} from './spinner';

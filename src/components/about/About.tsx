@@ -2,13 +2,13 @@ import { useState, useCallback, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import img from '../../assets/images/Sarah.jpeg'; 
 import { aboutInfo } from "./data";
-import { tabAnimation } from "home/Home";
-import { DestinationTitle, MainContainer } from "GlobalStyles";
+import { DestinationTitle, MainContainer } from "../../GlobalStyles";
 import { experienceData, ExperienceType } from "./data";
-import Experiece from "./Experiece";
+import { Experiece } from "../index";
 import  './about.scss';
+import { tabAnimation } from "../../utils/utils";
 
-const About = () => {
+ const About = () => {
 const [info] = useState(aboutInfo[0]); 
 
 const category = Object.values(ExperienceType)
@@ -117,4 +117,4 @@ key={value.name}
 )
 }
 
-export default About
+export { About}

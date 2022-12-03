@@ -1,13 +1,13 @@
 .destinationContainer {
   position: relative;
-  background: url("../../public/background/gallaxy.jpg")
+  background: url("../../../public/background/gallaxy.jpg")
     no-repeat;
   background-size: cover;
   padding: 12rem 15rem;
   min-height: 100vh;
 
   @media screen and (max-width: 430px) {
-    background: url("../../public/background/background-destination-mobile.jpg")
+    background: url("../../../public/background/background-destination-mobile.jpg")
       no-repeat;
     background-size: cover;
     padding: 15rem 3rem;
@@ -15,7 +15,7 @@
   }
 
   @media (min-width: 768px) and (max-width: 1180px) {
-    background: url("../../public/background/background-destination-tablet.jpg")
+    background: url("../../../public/background/background-destination-tablet.jpg")
       no-repeat;
     background-size: cover;
     padding: 15rem 3rem;

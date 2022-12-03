@@ -1,5 +1,5 @@
 import React from 'react';
-import { SkillCard, SkillIcons } from 'pages/styled';
+import { SkillIcons, SkillCard } from '../../pages/styled';
 
 export interface ISkillBox {
   title: string;
@@ -7,7 +7,7 @@ export interface ISkillBox {
   isMainSkill?: boolean;
 }
 
-export const SkillBox = (
+ const SkillBox = (
   {
     title,
     icon,
@@ -48,3 +48,4 @@ export const SkillBox = (
 };
 
 
+export {SkillBox}

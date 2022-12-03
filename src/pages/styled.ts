@@ -9,7 +9,6 @@ p{
 }
 `
 
-
 //Skills styles
 export const Cards = styled.div`
 padding: 15px;

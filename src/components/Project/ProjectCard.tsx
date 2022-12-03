@@ -5,9 +5,8 @@ import guide from '../../assets/images/guide.png'
 import sneakers from '../../assets/images/sneakers.png'
 import validate from '../../assets/images/validate.png'
 import spoty from '../../assets/images/spoty.png'
-
-import { Button } from "pages/button/Butoon";
-import { Tags } from "pages/styled";
+import { Button } from "../index";
+import { Tags } from "../../pages/styled";
 import './project.scss'
 
 
