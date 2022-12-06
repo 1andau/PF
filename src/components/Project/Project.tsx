@@ -17,7 +17,7 @@ import './project.scss';
       </DestinationTitle>
       
 
-<section className='projects'  ref={sectionRef}>
+<section className='projects'  ref={sectionRef} id='portfolio'>
 	<div className='projects__container'>
 		{projects
     .map((value) => (

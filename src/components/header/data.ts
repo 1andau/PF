@@ -1,22 +1,24 @@
-export const SidebarData = [
+export const SidebarData  = [
+  {
+    title: 'Home',
+    path: 'home',
+  },
+  {
+    title: 'Portfolio',
+    path: 'portfolio',
+  },
     {
-      title: 'Home',
-      path: '/home',
+    title: 'Skills',
+    path: 'skills',
+  },
+  {
+      title: 'About',
+      path: 'about',
     },
-    {
-      title: 'Portfolio',
-      path: '/portfolio',
-    },
-      {
-      title: 'Skills',
-      path: '/skills',
-    },
-    {
-        title: 'About',
-        path: '/about',
-      },
-    {
-      title: 'Contacts',
-      path: '/contacts',
-    },
-  ];
+  {
+    title: 'Contacts',
+    path: 'contacts',
+  },
+];
+
+

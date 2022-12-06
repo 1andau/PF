@@ -22,20 +22,19 @@ const handleTabClick = useCallback((name: ExperienceType) => {
 console.log(handleTabClick);
 
   return (
-    <MainContainer>
+    <MainContainer id="about">
     <DestinationTitle>
       <span>03</span>
       <h1>Chapter.About.</h1>
     </DestinationTitle>
 
-    <div className="MainInfo">
+    <div className="MainInfo" >
     <motion.div
       whileInView={{ opacity: [0, 1] }}
       transition={{ duration: 0.1 }}
       className="portfolio-img">
     <img id="Photo" src={img} alt=""/>
     </motion.div>
-
 
     <motion.div
       whileInView={{ y: [100, 0], opacity: [0, 1] }}
@@ -67,9 +66,9 @@ console.log(handleTabClick);
 <section className='tabs' ref={sectionRef}>
 <div className='tabs__list'>
 {category
-.map((value) => (
+.map((value, i) => (
   		<button
-      onClick={() => handleTabClick(value)} key={value}
+      onClick={() => handleTabClick(value)} key={i}
     className={`${'tabs__list_item'} ${
       activeTab === value ? 'tabs__list_item_active' : ""
     }`}

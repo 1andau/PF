@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { Header, Footer } from "../index";
+import { Header } from "../index";
 
  const Layout = () => {
 
@@ -8,7 +8,6 @@ import { Header, Footer } from "../index";
 			<Header />
 			<main id="content">
 				<Outlet />
-				<Footer />
 			</main>
 		</>
   )

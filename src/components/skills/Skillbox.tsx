@@ -1,4 +1,3 @@
-import React from 'react';
 import { SkillIcons, SkillCard } from '../../pages/styled';
 
 export interface ISkillBox {
@@ -34,7 +33,8 @@ export interface ISkillBox {
      {icon ? (
           <SkillIcons
           src={`/icons/${icon}`}
-          alt={title} />
+          alt={title}
+          />
       ) : (
      
         <p>

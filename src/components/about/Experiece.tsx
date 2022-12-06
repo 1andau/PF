@@ -1,6 +1,5 @@
 import './about.scss'
 
-
 export interface ExperienceProps{
   name: string; 
   company: string; 

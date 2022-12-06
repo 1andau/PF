@@ -6,13 +6,13 @@ import './Home.scss';
 import CV from '../../assets/CV/cv-Sarah.pdf'; 
 import spaceImg from '../../assets/images/space.png'; 
 import { tabAnimation } from '../../utils/utils';
-import { About, Contact, Project, Skills, Button, Loader  } from '../index';
+import {Button } from '../index';
 
  const Home = () => {
     const [isSelected] = React.useState(dest[0]);
 
   return (
-    <div className="destinationContainer">
+    <div className="destinationContainer" id='home'>
       <DestinationTitle>
         <span>01</span>
         <h1>Chapter.Familiarization.</h1>
@@ -31,7 +31,7 @@ import { About, Contact, Project, Skills, Button, Loader  } from '../index';
           transition={{ duration: 0.8 }}
           className="portfolioDetail"
         >
- ъЭ    
+
           <AnimatePresence exitBeforeEnter initial={false}>
             <motion.div
               key={isSelected.name}

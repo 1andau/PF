@@ -1,5 +1,6 @@
 import * as React from "react";
-import { Home, Loader } from "../../components/index";
+import {  Home, Loader } from "../../components/index";
+
 
 const Project = React.lazy(() =>
 	import("../../components").then(({ Project }) => ({
@@ -24,6 +25,7 @@ import("../../components").then(({ Skills }) => ({
 );
 
 
+
 const Hero = () => {
     React.useEffect(() => {
 		if (window.location.hash) {
@@ -44,11 +46,10 @@ const Hero = () => {
       <>
       <Home/>
         <React.Suspense fallback = {<Loader/>}>
-        <Project/>
+        <Project />
+		<About/>
         <Skills/>
-        <About/>
 		<Contact/>
-
         </React.Suspense>   
         </>
     )
